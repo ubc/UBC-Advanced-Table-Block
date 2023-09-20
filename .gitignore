@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+#php vendor
+vendor/
+
+package-lock.json
+composer.lock

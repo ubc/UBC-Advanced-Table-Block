@@ -1,0 +1,134 @@
+/*Advanced Table block styles*/
+.editor-styles-wrapper .wp-block[data-align=center] > .wp-block-ubc-advanced-table-block td,
+.editor-styles-wrapper .wp-block[data-align=center] > .wp-block-ubc-advanced-table-block td {
+  text-align: left;
+}
+
+.wp-block-ubc-advanced-table-block {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.wp-block-ubc-advanced-table-block caption {
+    min-width: 100%;
+    min-height: 40px;
+    border: 1px solid #ccc;
+}
+
+.wp-block-ubc-advanced-table-block caption em {
+    width: 100%;
+    height: 40px;
+    display: block;
+}
+
+.wp-block-ubc-advanced-table-block td, .wp-block-ubc-advanced-table-block tr {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+}
+
+.wp-block-ubc-advanced-table-block td.cell-selected {
+    outline: 2px solid #2196f3;
+}
+
+.ubcatb-controls-container p.ubcatb-block-description {
+    font-size: 13px;
+    color: #1e1e1e;
+    margin-bottom: 1.5rem;
+}
+
+.ubcatb-shift-hint {
+    margin-top: 10px;
+}
+
+.ubcatb-shift-hint small {
+    font-style: italic;
+}
+
+.ubcatb-controls-container {
+    margin-top: 0.5rem;
+    overflow: hidden;
+    clear: both;
+}
+
+.ubcatb-controls-container .ubcatb-insert-field {
+    width: 30%;
+    margin-right: 3%;
+    float: left;
+}
+
+.ubcatb-controls-container .ubcatb-insert-field input[type=number] {
+    padding: 0.6rem !important;
+}
+
+.ubcatb-controls-container button.ubcatb-insert-field {
+    width: auto;
+    margin-top: 1.9rem;
+}
+
+.advgb-init-table {
+    background: white;
+    border: 1px solid #2196f3;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px #1e1e1e;
+    padding: 2rem;
+}
+
+.ubcatb-insert-title {
+    position: relative;
+    top: -3px;
+}
+
+.advgb-border-item-wrapper {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    margin: 0 0 1em;
+}
+
+.advgb-border-item {
+    min-width: 25%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.advgb-border-item span {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.advgb-border-item svg {
+    vertical-align: middle;
+}
+
+table.advgb-table-frontend {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0 auto 1em;
+    width: 100%;
+    max-width: 100%;
+
+    &.aligncenter {
+      display: table;
+      text-align: left;
+    }
+}
+
+table.advgb-table-frontend td, table.advgb-table-frontend tr {
+    border: 1px solid transparent;
+    padding: .5em;
+}
+
+.wp-block-ubc-advanced-table-block thead tr:last-child td {
+    border-bottom: 2px solid #000;
+}
+
+.wp-block-ubc-advanced-table-block tfoot tr:first-child td {
+    border-top: 2px solid #000;
+}
+
+.wp-block-ubc-advanced-table-block.is-style-stripes tbody tr:nth-child(odd) {
+    background-color: #f3f4f5;
+}
